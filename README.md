@@ -81,6 +81,34 @@ mkdir os/tenants
 kustomize build os/core/gitops-controller/
 ```
 
+## apply the manifest
+
+- Run the following to apply the repository to an openshift cluster.
+```bash
+until 
+oc apply -k os/bootstrap/overlays/default/
+do
+  sleep 3
+done
+```
+
+- verify everything is up
+```bash
+oc get pods -n openshift-gitops
+oc get apps -n openshift-gitops
+oc get appsets -n openshift-gitops
+```
+
+- get the route
+```bash
+kubectl get route openshift-gitops-server -n openshift-gitops -o jsonpath='{.spec.host}{"\n"}'
+```
+
+- clean up if needed
+```bash
+oc delete -k os/bootstrap/overlays/default
+```
+
 ## License & Authors
 
 If you would like to see the detailed LICENSE click [here](./LICENSE).
