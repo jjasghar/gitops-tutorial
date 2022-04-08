@@ -1,0 +1,12 @@
+apiVersion: console.openshift.io/v1
+kind: ConsoleLink
+metadata:
+  name: google-menu-link
+spec:
+  href: 'https://www.google.com'
+  location: ApplicationMenu
+  text: Link to Google
+  applicationMenu:
+    section: Google Section
+    # image that is 24x24 in size
+    imageURL: https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg
