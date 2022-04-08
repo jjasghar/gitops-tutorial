@@ -4,6 +4,9 @@
 
 I took most of what I know about GitOps from Christian Hernandez and his [youtube video](https://www.youtube.com/watch?v=o_lcRoiFtUU) GitOps from Scratch. Thank you Christian for how amazing it is.
 
+The two main demo apps are [pythonapp](./os/tenants/pythonapp) which is my "awesomepythonapp", and
+[linktogoogle](./os/tenants/linktogoogle/) a simple link to google in the OpenShift UI.
+
 ## Prereqs
 
 - OpenShift cluster
