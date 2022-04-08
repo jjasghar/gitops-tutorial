@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: pythonapp
+  name: pythonapp
+  namespace: pythonapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pythonapp
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: pythonapp
+    spec:
+      containers:
+      - image: icr.io/awesome/awesomepythonapp:1.0.0
+        name: pythonapp
+        resources: {}
+status: {}
