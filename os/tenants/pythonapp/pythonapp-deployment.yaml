@@ -19,7 +19,7 @@ spec:
         app: pythonapp
     spec:
       containers:
-      - image: icr.io/awesome/awesomepythonapp:1.0.0
+      - image: icr.io/awesome/awesomepythonapp:2.0.0
         name: pythonapp
         resources: {}
 status: {}
