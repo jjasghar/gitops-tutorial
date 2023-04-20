@@ -3,7 +3,7 @@ kind: ConsoleLink
 metadata:
   name: google-menu-link
 spec:
-  href: 'https://www.google.com'
+  href: 'https://www.bing.com'
   location: ApplicationMenu
   text: Link to Google
   applicationMenu:
